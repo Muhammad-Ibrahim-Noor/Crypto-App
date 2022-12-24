@@ -29,12 +29,12 @@ const CoinDetails = () => {
   const [coin, setCoin] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [currency, setCurrency] = useState("inr");
+  const [currency, setCurrency] = useState("pkr");
   const [days, setDays] = useState("24h");
   const [chartArray, setChartArray] = useState([]);
 
   const currencySymbol =
-    currency === "inr" ? "₹" : currency === "eur" ? "€" : "$";
+    currency === "pkr" ? "PkR" : currency === "eur" ? "€" : "$";
 
   const btns = ["24h", "7d", "14d", "30d", "60d", "200d", "1y", "max"];
 
@@ -125,7 +125,7 @@ const CoinDetails = () => {
 
           <RadioGroup value={currency} onChange={setCurrency} p={"8"}>
             <HStack spacing={"4"}>
-              <Radio value={"inr"}>INR</Radio>
+              <Radio value={"pkr"}>PkR</Radio>
               <Radio value={"usd"}>USD</Radio>
               <Radio value={"eur"}>EUR</Radio>
             </HStack>

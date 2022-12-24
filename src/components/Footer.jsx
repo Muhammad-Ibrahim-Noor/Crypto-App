@@ -20,13 +20,13 @@ const Footer = () => {
             letterSpacing={"widest"}
             textAlign={["center", "left"]}
           >
-            We are the best crypto trading app in India, we provide our guidance
+            We are the best crypto trading app, we provide our guidance
             at a very cheap price.
           </Text>
         </VStack>
 
         <VStack>
-          <Avatar boxSize={"28"} mt={["4", "0"]} src={avatarSrc} />
+          <Avatar boxSize={"28"} mt={["4", "0"]}  />
           <Text>Our Founder</Text>
         </VStack>
       </Stack>
